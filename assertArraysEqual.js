@@ -10,8 +10,22 @@ let eqArray = function (array1, array2) {
   }
   return true;
 };
-console.log(eqArray(array1, array2));
+
+const assertArraysEqual = function(actual, expected) {
+  if(eqArray (actual, expected)) {
+    console.log(`👌  Assertion Passed: ${actual} === ${expected}`);
+  } else {
+    console.log(`☠️  Assertion Failed: ${actual} !== ${expected}`);
+  }
+};
+
+assertArraysEqual([1,2,3], [1,2,3]);
+
+assertArraysEqual([1,3,3], [1,2,3]);
+
+/*console.log(eqArray(array1, array2));
 
 assertArraysEqual = function (eqArray) {
   console.log(assertArraysEqual(array1, array2));
 };
+*/
