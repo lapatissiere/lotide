@@ -22,20 +22,20 @@ const assertArraysEqual = function (actual, expected) {
 // median for even number of elements = two numbers in the middle
 
 // if array.length <= 2, return empty array
+let array = [1, 2, 3, 4, 5];
+const middleIndex = Math.floor(array.length / 2);
+const middleLeft = array[middleIndex - 1];
+const middleRight = array[middleIndex];
 
 const middle = function (array) {
   if (array.length <= 2) {
     return [];
   }
-
-  const middleIndex = Math.floor(array.length / 2);
   if (array.length % 2 === 1) {
     return [array[middleIndex]];
+  } else {
+    return [middleLeft, middleRight];
   }
-
-  const middleLeft = array[middleIndex - 1];
-  const middleRight = array[middleIndex];
-  return [middleLeft, middleRight];
 };
-
+console.log(middle([1, 2, 3, 4, 5]));
 module.exports = middle;
