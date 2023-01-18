@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@lapatissiere/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lotide project for Lighthouse Labs homework",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -18,7 +18,7 @@
     "type": "git",
     "url": "git+https://github.com/lapatissiere/lotide.git"
   },
-  "author": "",
+  "author": "Nazia Farooq",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lapatissiere/lotide/issues"
